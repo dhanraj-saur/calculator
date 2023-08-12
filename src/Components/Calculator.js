@@ -3,7 +3,7 @@ import React, { useState } from "react";
 const Calculator = () => {
     let [num1, setNum1] = useState("");
     let [num2, setNum2] = useState("");
-    let [operation, setOperation] = useState("");
+
     let [result, setResult] = useState("");
     let [error, setError] = useState("");
     let [success, setSuccess] = useState("");
@@ -18,7 +18,7 @@ const Calculator = () => {
         const n2 = parseFloat(num2);
 
         if (isNaN(n1) || isNaN(n2)) {
-          setResult("Invalid Results")
+            setResult("Invalid Results")
             setError("Error! Num cannot be empty")
             return;
         }
@@ -51,7 +51,7 @@ const Calculator = () => {
         }
 
         setResult(res);
-        setOperation(operator);
+
     };
 
     return (
