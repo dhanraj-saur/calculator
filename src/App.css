@@ -1,38 +1,84 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;1,100;1,200;1,400&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: rgba(215, 215, 215, 1);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.react-calculator {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  margin-top: 200px;
+  width: 30%;
+  height: 380px;
+  margin-left: 28%;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 1);
+  box-shadow: -18px 22px 45px rgba(232, 28, 66, .89), 30px -20px 100px -5px #152cc1;
 }
 
-.App-link {
-  color: #61dafb;
+.calculator {
+  display: block;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.heads {
+  margin-top: -8px;
+
+}
+
+.input input {
+  width: 100%;
+  height: 30px;
+  padding: 10px;
+  font-size: 15px;
+}
+
+.button {
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+  margin-top: 15px;
+
+}
+
+.button button {
+  width: 40px;
+  height: 40px;
+  background-color: black;
+  color: #FFFFFF;
+  font-size: 15px;
+  border: none;
+}
+
+
+.result {
+  margin-top: 40px;
+  margin-left: 20px;
+  font-size: 18px;
+}
+
+.result .success {
+  margin-bottom: 20px;
+  margin-left: 70px;
+}
+.result .error{
+  margin-bottom: 20px;
+ 
+}
+
+.success {
+  color: #0057FF;
+}
+.error{
+  color: red;
 }
