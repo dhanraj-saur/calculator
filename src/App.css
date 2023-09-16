@@ -70,15 +70,30 @@ body {
 .result .success {
   margin-bottom: 20px;
   margin-left: 70px;
+  
 }
 .result .error{
   margin-bottom: 20px;
- 
+  margin-left: 95px;
 }
 
 .success {
   color: #0057FF;
+  font-size: 20px;
+  font-weight: 900;
 }
+.success1{
+  font-size: 20px;
+  font-weight: 900;
+}
+
 .error{
   color: red;
+  font-size: 20px;
+  font-weight: 900;
+  
+}
+.error1{
+  font-size: 20px;
+  font-weight: 900;
 }

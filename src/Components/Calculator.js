@@ -18,8 +18,9 @@ const Calculator = () => {
         const n2 = parseFloat(num2);
 
         if (isNaN(n1) || isNaN(n2)) {
-            setResult("Invalid Results")
-            setError("Error! Num cannot be empty")
+            // setResult("Num cannot be empty")
+            setError("Error!")
+
             return;
         }
         else {
@@ -91,15 +92,20 @@ const Calculator = () => {
                     <div className="result">
                         {
                             error &&
-                            <div className="error">{error}</div>
+                            <>
+                                <div className="error">{error}</div>
+                                <span className="error1">Num1 Cannot Be Empty</span>
+                            </>
                         }
                         {
                             success &&
-                            <div className="success">
-                                {success}
-                            </div>
+                            <>
+                                <div className="success">{success}</div>
+                                <span className="success1"> Result: {result}</span>
+                            </>
                         }
-                        <p>Result : {result}</p>
+
+
                     </div>
                 </div>
             </div>
